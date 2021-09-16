@@ -17,7 +17,7 @@ const Counters = () => {
 
   const handlerIncrement = (counterId) => {
     const newcounters = [...counters];
-    counters.map(c => {
+    newcounters.map(c => {
       if(c.id === counterId) {
         c.value += 1;
       }
